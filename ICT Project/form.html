@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            position: relative;
+        }
+
+        .navbar {
+            background-color: #0071DC;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(0, 78, 167);
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 8px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-container input {
+            padding: 12px;
+            margin-right: 8px;
+            border: none;
+            width: 1000px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-button {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-button button {
+            padding: 5px;
+            border: none;
+            background-color: #ffbb00;
+            color: white;
+            font-size: 1px;
+            cursor: pointer;
+            border-radius: 50%;
+            margin-left: -40px;
+        }
+
+        #p1 {
+            width: 130px;
+            height: auto;
+        }
+
+        #p2 {
+            width: 100px;
+            height: auto;
+        }
+
+        #p3 {
+            width: 100px;
+            height: auto;
+        }
+
+        #p4 {
+            width: 95px;
+            height: auto;
+        }
+
+        #p5 {
+            width: 40px;
+            height: auto;
+        }
+
+        #p6 {
+            width: 20px;
+            height: auto;
+        }
+        .p8 {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .feedbackForm{
+            text-align: center;
+            
+        }
+        #feedback {
+     margin-right: -56px;
+}
+        .b1{
+            border-color: rgb(122, 122, 122);
+            border-radius: 20px;
+            font-weight: bold;
+            padding:7px 15px;
+            background: #ffffff;
+            cursor: pointer;
+            border:rgb(122, 122, 122);
+            border-style: solid;
+            position: relative;
+            left:25px;
+        }
+        .b1:hover {
+           border-color: rgb(0, 0, 0);
+           font-weight: bolder;
+           border-style: solid;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-container input {
+            padding: 12px;
+            margin-right: 8px;
+            border: none;
+            width: 1000px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .head{
+            font-size: 40px;
+            position: relative;
+            left:20px;
+        }
+        .fb {
+            text-align: center;
+            border-color: rgb(122, 122, 122);
+           
+        }
+
+        .fb input,
+        .fb textarea {
+            border-radius: 20px;
+            padding: 10px;
+            margin-bottom: 16px;
+            width: 20%;
+            box-sizing: border-box;
+            border-color:rgb(122, 122, 122);
+            border-style: solid;
+        }
+        .lb {
+    position: absolute;
+    top: 544px;
+    left: 715px;
+}
+.phone-container {
+    margin-top: 20px;
+    position: relative;
+    left: -34px;
+}
+
+        .phone-container label {
+            font-size: 16px;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .phone-container input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <a href="walmart.html">
+                <img src="walmartLogo.svg" alt="Walmart">
+            </a>
+            <a href="#about">
+                <img id="p1" src="Capture.PNG" alt="Walmart">
+            </a>
+            <a href="#services">
+                <img id="p2" src="Capture1.PNG" alt="Walmart">
+            </a>
+            <div class="search-container">
+                <input type="text" placeholder="Search everything at Walmart online and in-store">
+                <div class="search-button">
+                    <button type="button">
+                        <img id="p6" src="6.PNG" alt="Walmart">
+                    </button>
+                </div>
+            </div>
+            <a href="#contact">
+                <img id="p3" src="3.PNG" alt="Walmart">
+            </a>
+            <a href="#contact">
+                <img id="p4" src="4.PNG" alt="Walmart">
+            </a>
+            <a href="#contact">
+                <img id="p5" src="5.PNG" alt="Walmart">
+            </a>
+        </div>
+        <img class="p8" src="Screenshot 2023-11-22 192815.png">
+    <h2 class="feedbackForm head">Feedback Form</h2>
+    <form action="ty.html" method="post" class="feedbackForm fb">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <div class="phone-container">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
+        </div>
+        <br>
+        <br>
+        <label class="lb" for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="6" required></textarea>
+        <br>
+        <br>
+        <input class="b1" type="submit" value="submit">
+    </form>
+    
+
+</body>
+</html>
